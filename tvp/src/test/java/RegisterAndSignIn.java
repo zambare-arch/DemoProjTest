@@ -29,7 +29,7 @@ public class RegisterAndSignIn {
 		LastName.sendKeys("Zambare");
 
 		WebElement UserName= driver.findElement(By.xpath("//input[@formcontrolname='username']"));
-		UserName.sendKeys("AaZambare");
+		UserName.sendKeys("AaZambare1234");
 
 		WebElement Password= driver.findElement(By.xpath("//input[@id='mat-input-5']"));
 		Password.sendKeys("Password@123");
@@ -46,10 +46,10 @@ public class RegisterAndSignIn {
 			}
 		}*/
 		
-		WebElement Male=driver.findElement(By.xpath("//mat-radio-button[@id='mat-radio-2']"));
-		Male.click();
+		/*WebElement Male=driver.findElement(By.xpath("//mat-radio-button[@id='mat-radio-2']"));
+		Male.click();*/
 		WebElement Female=driver.findElement(By.xpath("//input[@value='Female']"));
-		Female.click();
+		Female.submit();
 		
 		//WebElement RegtrBtn= driver.findElement(By.xpath("//body/app-root[1]/div[1]/app-user-registration[1]/div[1]/mat-card[1]/mat-card-content[1]/form[1]/mat-card-actions[1]/button[1]/span[2]"));
 		Thread.sleep(1000);
@@ -59,7 +59,7 @@ public class RegisterAndSignIn {
 		WebElement logbtn= driver.findElement(By.xpath("(//span[contains(text(),'Login')])"));//button[@ng-reflect-router-link='/login']
 		logbtn.click();
 		WebElement user = driver.findElement(By.xpath("//input[@formcontrolname='username']"));//input[@id="mat-input-0"]
-		user.sendKeys("AZambare");
+		user.sendKeys("AaZambare1234");
 		WebElement pass = driver.findElement(By.xpath("//input[@formcontrolname='password']"));
 		pass.sendKeys("Password@123");
 		WebElement loginbtn = driver.findElement(By.xpath("//span[text()='Login']"));
